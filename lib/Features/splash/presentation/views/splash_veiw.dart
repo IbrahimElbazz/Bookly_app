@@ -1,4 +1,4 @@
-import 'package:bookly_app/core/utils/images.dart';
+import 'package:bookly_app/Features/splash/presentation/views/widgets/splash_body.dart';
 import 'package:flutter/material.dart';
 
 class splash_page extends StatelessWidget {
@@ -6,10 +6,6 @@ class splash_page extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Image.asset(imageData.logo),
-      ),
-    );
+    return splash_body();
   }
 }
