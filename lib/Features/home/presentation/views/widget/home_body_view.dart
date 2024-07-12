@@ -16,9 +16,29 @@ class home_body_view extends StatelessWidget {
         child: Column(
           children: const [
             custem_app_bar(),
-            custem_item(),
+            list_view_item(),
           ],
         ),
+      ),
+    );
+  }
+}
+
+class list_view_item extends StatelessWidget {
+  const list_view_item({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      height: MediaQuery.of(context).size.height * 0.2,
+      child: ListView.builder(
+        scrollDirection: Axis.horizontal,
+        itemBuilder: (context, index) {
+          return Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 8),
+            child: custem_item(),
+          );
+        },
       ),
     );
   }
