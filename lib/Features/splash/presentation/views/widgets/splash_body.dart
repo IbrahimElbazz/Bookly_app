@@ -48,7 +48,9 @@ class _splash_bodyState extends State<splash_body>
           SizedBox(
             height: 5,
           ),
-          Animation_builder_widget(slidanimation: slidanimation),
+          Animation_builder_widget(
+            slidanimation: slidanimation,
+          ),
         ],
       ),
     );
@@ -59,7 +61,7 @@ class _splash_bodyState extends State<splash_body>
       vsync: this,
       duration: (Duration(seconds: 2)),
     );
-    slidanimation = Tween(begin: Offset(0, 20), end: Offset.zero)
+    slidanimation = Tween(begin: Offset(0, 5), end: Offset.zero)
         .animate(animationController);
 
     animationController.forward();

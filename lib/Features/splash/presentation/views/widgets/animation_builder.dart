@@ -18,7 +18,7 @@ class Animation_builder_widget extends StatelessWidget {
           child: Text(
             'Read free book',
             textAlign: TextAlign.center,
-            style: TextStyle(fontSize: 16),
+            style: TextStyle(fontSize: 16, color: Colors.white),
           ),
         );
       },
