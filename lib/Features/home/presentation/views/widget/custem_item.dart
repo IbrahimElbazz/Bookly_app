@@ -6,16 +6,14 @@ class custem_item extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      child: AspectRatio(
-        aspectRatio: 2 / 2.5,
-        child: Container(
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(10),
-            color: Colors.red,
-            image: DecorationImage(
-                image: AssetImage(imageData.test), fit: BoxFit.fill),
-          ),
+    return AspectRatio(
+      aspectRatio: 2 / 2.5,
+      child: Container(
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(10),
+          color: Colors.red,
+          image: DecorationImage(
+              image: AssetImage(imageData.test), fit: BoxFit.fill),
         ),
       ),
     );
