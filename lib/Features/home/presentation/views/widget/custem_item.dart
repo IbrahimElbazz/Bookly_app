@@ -11,7 +11,6 @@ class custem_item extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
-          color: Colors.red,
           image: DecorationImage(
               image: AssetImage(imageData.test), fit: BoxFit.fill),
         ),
