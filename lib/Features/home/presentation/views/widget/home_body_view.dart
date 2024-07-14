@@ -26,17 +26,17 @@ class home_body_view extends StatelessWidget {
                 custem_app_bar(),
                 list_view_item(),
                 SizedBox(
-                  height: 50,
+                  height: 40,
                 ),
                 Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 30),
+                  padding: EdgeInsets.only(left: 30),
                   child: Text(
                     'Best Seller',
                     style: Style.title,
                   ),
                 ),
                 SizedBox(
-                  height: 20,
+                  height: 25,
                 ),
               ],
             ),

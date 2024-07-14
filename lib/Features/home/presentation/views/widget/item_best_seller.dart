@@ -12,10 +12,11 @@ class item_best_seller extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(bottom: 20),
       child: Container(
+        height: 100,
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             SizedBox(
-              height: 100,
               child: AspectRatio(
                 aspectRatio: 2.2 / 2.5,
                 child: Container(
@@ -50,7 +51,7 @@ class item_best_seller extends StatelessWidget {
                   children: [
                     Text('19.99' r'$', style: Style.title),
                     SizedBox(
-                      width: 40,
+                      width: 80,
                     ),
                     Icon(
                       Icons.star,
