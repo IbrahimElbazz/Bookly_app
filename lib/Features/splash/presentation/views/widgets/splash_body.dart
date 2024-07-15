@@ -3,7 +3,7 @@ import 'package:bookly_app/Features/splash/presentation/views/widgets/animation_
 import 'package:bookly_app/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:bookly_app/core/utils/images.dart';
-import 'package:get/get.dart';
+import 'package:go_router/go_router.dart';
 
 class splash_body extends StatefulWidget {
   const splash_body({super.key});
@@ -23,10 +23,14 @@ class _splash_bodyState extends State<splash_body>
     init_animation();
 
     Future.delayed(Duration(seconds: 3), () {
-      Get.to(
-        () => Home_view(),
-        transition: Transition.rightToLeft,
-        duration: Kprimaryduration,
+      // Get.to(
+      //   () => Home_view(),
+      //   transition: Transition.rightToLeft,
+      //   duration: Kprimaryduration,
+      // );
+
+      context.go(
+        '/Home',
       );
     });
   }
