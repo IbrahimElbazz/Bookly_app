@@ -1,10 +1,15 @@
+import 'package:bookly_app/Features/home/presentation/views/widget/Book_detailes_custem_appBar.dart';
 import 'package:flutter/material.dart';
 
-class Home_detailes_view_body extends StatelessWidget {
-  const Home_detailes_view_body({super.key});
+class Book_detailes_view_body extends StatelessWidget {
+  const Book_detailes_view_body({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: SafeArea(
+        child: Book_detailes_custem_appBar(),
+      ),
+    );
   }
 }

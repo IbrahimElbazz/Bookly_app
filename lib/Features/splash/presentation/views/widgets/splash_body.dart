@@ -1,6 +1,7 @@
 import 'package:bookly_app/Features/home/presentation/views/home.dart';
 import 'package:bookly_app/Features/splash/presentation/views/widgets/animation_builder.dart';
 import 'package:bookly_app/constants.dart';
+import 'package:bookly_app/core/utils/app_router.dart';
 import 'package:flutter/material.dart';
 import 'package:bookly_app/core/utils/images.dart';
 import 'package:go_router/go_router.dart';
@@ -29,9 +30,7 @@ class _splash_bodyState extends State<splash_body>
       //   duration: Kprimaryduration,
       // );
 
-      context.go(
-        '/Home',
-      );
+      GoRouter.of(context).push(app_router.KHome_view);
     });
   }
 
