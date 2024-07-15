@@ -7,23 +7,26 @@ class custem_app_bar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Image.asset(
-          imageData.logo,
-          width: 80,
-          height: 60,
-        ),
-        Spacer(),
-        IconButton(
-          onPressed: () {},
-          padding: EdgeInsets.zero,
-          icon: Icon(
-            Icons.search,
-            size: 35,
+    return Padding(
+      padding: const EdgeInsets.only(left: 10),
+      child: Row(
+        children: [
+          Image.asset(
+            imageData.logo,
+            width: 80,
+            height: 60,
           ),
-        )
-      ],
+          Spacer(),
+          IconButton(
+            onPressed: () {},
+            padding: EdgeInsets.zero,
+            icon: Icon(
+              Icons.search,
+              size: 35,
+            ),
+          )
+        ],
+      ),
     );
   }
 }
