@@ -2,6 +2,7 @@ import 'package:bookly_app/Features/home/presentation/views/widget/Book_detailes
 import 'package:bookly_app/Features/home/presentation/views/widget/Book_rating.dart';
 import 'package:bookly_app/Features/home/presentation/views/widget/action_button.dart';
 import 'package:bookly_app/Features/home/presentation/views/widget/custem_item.dart';
+import 'package:bookly_app/Features/home/presentation/views/widget/list_view_item_inDetails.dart';
 
 import 'package:bookly_app/core/utils/style.dart';
 
@@ -48,6 +49,26 @@ class Book_detailes_view_body extends StatelessWidget {
             height: 32,
           ),
           const action_button(),
+          const SizedBox(
+            height: 50,
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 16),
+            child: Align(
+              alignment: Alignment.centerLeft,
+              child: Text(
+                'You can also like',
+                style: Style.title.copyWith(fontSize: 16),
+              ),
+            ),
+          ),
+          const SizedBox(
+            height: 25,
+          ),
+          const list_view_item_inDetails(),
+          const SizedBox(
+            height: 40,
+          )
         ],
       ),
     );
