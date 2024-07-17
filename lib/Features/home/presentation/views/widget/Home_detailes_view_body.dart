@@ -1,8 +1,10 @@
 import 'package:bookly_app/Features/home/presentation/views/widget/Book_detailes_custem_appBar.dart';
 import 'package:bookly_app/Features/home/presentation/views/widget/Book_rating.dart';
+import 'package:bookly_app/Features/home/presentation/views/widget/action_button.dart';
 import 'package:bookly_app/Features/home/presentation/views/widget/custem_item.dart';
 
 import 'package:bookly_app/core/utils/style.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -18,7 +20,7 @@ class Book_detailes_view_body extends StatelessWidget {
             child: const Book_detailes_custem_appBar(),
           ),
           const SizedBox(
-            height: 50,
+            height: 30,
           ),
           SizedBox(
             height: MediaQuery.of(context).size.height * 0.28,
@@ -41,7 +43,11 @@ class Book_detailes_view_body extends StatelessWidget {
           const SizedBox(
             height: 10,
           ),
-          Book_rating(),
+          const Book_rating(),
+          const SizedBox(
+            height: 32,
+          ),
+          const action_button(),
         ],
       ),
     );
