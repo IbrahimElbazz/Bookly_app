@@ -1,3 +1,4 @@
+import 'package:bookly_app/Features/search/presintation/views/widget/custem_textfeild.dart';
 import 'package:flutter/material.dart';
 
 class search_view_body extends StatelessWidget {
@@ -5,6 +6,14 @@ class search_view_body extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return const Scaffold(
+      body: SafeArea(
+        child: Column(
+          children: [
+            custem_textfeild(),
+          ],
+        ),
+      ),
+    );
   }
 }
