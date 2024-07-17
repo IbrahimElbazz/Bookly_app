@@ -1,4 +1,5 @@
 import 'package:bookly_app/Features/home/presentation/views/widget/Book_detailes_custem_appBar.dart';
+import 'package:bookly_app/Features/home/presentation/views/widget/Book_rating.dart';
 import 'package:bookly_app/Features/home/presentation/views/widget/custem_item.dart';
 
 import 'package:bookly_app/core/utils/style.dart';
@@ -14,14 +15,14 @@ class Book_detailes_view_body extends StatelessWidget {
       body: Column(
         children: [
           const SafeArea(
-            child: Book_detailes_custem_appBar(),
+            child: const Book_detailes_custem_appBar(),
           ),
           const SizedBox(
             height: 50,
           ),
           SizedBox(
             height: MediaQuery.of(context).size.height * 0.28,
-            child: custem_item(),
+            child: const custem_item(),
           ),
           const SizedBox(
             height: 30,
@@ -40,22 +41,7 @@ class Book_detailes_view_body extends StatelessWidget {
           const SizedBox(
             height: 10,
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              const Icon(
-                Icons.star,
-                color: Colors.yellow,
-                size: 20,
-              ),
-              const Text(
-                '4.8',
-                style: TextStyle(fontWeight: FontWeight.w600, fontSize: 15),
-              ),
-              Text('(2390)',
-                  style: TextStyle(color: Colors.white.withOpacity(.5)))
-            ],
-          )
+          Book_rating(),
         ],
       ),
     );

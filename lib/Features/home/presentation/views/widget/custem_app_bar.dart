@@ -16,11 +16,11 @@ class custem_app_bar extends StatelessWidget {
             width: 80,
             height: 60,
           ),
-          Spacer(),
+          const Spacer(),
           IconButton(
             onPressed: () {},
             padding: EdgeInsets.zero,
-            icon: Icon(
+            icon: const Icon(
               Icons.search,
               size: 35,
             ),

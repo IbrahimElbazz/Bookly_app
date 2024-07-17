@@ -1,3 +1,4 @@
+import 'package:bookly_app/Features/home/presentation/views/widget/Book_rating.dart';
 import 'package:bookly_app/core/utils/app_router.dart';
 import 'package:bookly_app/core/utils/images.dart';
 import 'package:bookly_app/core/utils/style.dart';
@@ -28,13 +29,13 @@ class item_best_seller extends StatelessWidget {
                   child: Container(
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
-                      image: DecorationImage(
+                      image: const DecorationImage(
                           image: AssetImage(imageData.test), fit: BoxFit.fill),
                     ),
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 width: 30,
               ),
               Column(
@@ -42,7 +43,7 @@ class item_best_seller extends StatelessWidget {
                 children: [
                   SizedBox(
                     width: MediaQuery.of(context).size.width * .5,
-                    child: Text(
+                    child: const Text(
                       'Harry Poter and the Goblet of fire',
                       style: Style.title,
                       maxLines: 2,
@@ -53,27 +54,13 @@ class item_best_seller extends StatelessWidget {
                     'J.K.Rowling',
                     style: TextStyle(color: Colors.white.withOpacity(.5)),
                   ),
-                  Row(
+                  const Row(
                     children: [
                       Text('19.99' r'$', style: Style.title),
                       SizedBox(
                         width: 80,
                       ),
-                      Icon(
-                        Icons.star,
-                        color: Colors.yellow,
-                        size: 20,
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 3),
-                        child: Text(
-                          '4.8',
-                          style: TextStyle(
-                              fontWeight: FontWeight.w600, fontSize: 15),
-                        ),
-                      ),
-                      Text('(2390)',
-                          style: TextStyle(color: Colors.white.withOpacity(.5)))
+                      Book_rating(),
                     ],
                   )
                 ],
