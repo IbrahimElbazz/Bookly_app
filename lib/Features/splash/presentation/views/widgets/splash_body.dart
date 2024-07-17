@@ -1,6 +1,5 @@
-import 'package:bookly_app/Features/home/presentation/views/home.dart';
 import 'package:bookly_app/Features/splash/presentation/views/widgets/animation_builder.dart';
-import 'package:bookly_app/constants.dart';
+
 import 'package:bookly_app/core/utils/app_router.dart';
 import 'package:flutter/material.dart';
 import 'package:bookly_app/core/utils/images.dart';
