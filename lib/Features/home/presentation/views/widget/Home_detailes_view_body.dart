@@ -1,12 +1,8 @@
 import 'package:bookly_app/Features/home/presentation/views/widget/Book_detailes_custem_appBar.dart';
-import 'package:bookly_app/Features/home/presentation/views/widget/Book_rating.dart';
-import 'package:bookly_app/Features/home/presentation/views/widget/action_button.dart';
-import 'package:bookly_app/Features/home/presentation/views/widget/box_details_section.dart';
-import 'package:bookly_app/Features/home/presentation/views/widget/custem_item.dart';
-import 'package:bookly_app/Features/home/presentation/views/widget/list_view_item_inDetails.dart';
-import 'package:bookly_app/Features/home/presentation/views/widget/similar_box_section.dart';
 
-import 'package:bookly_app/core/utils/style.dart';
+import 'package:bookly_app/Features/home/presentation/views/widget/box_details_section.dart';
+
+import 'package:bookly_app/Features/home/presentation/views/widget/similar_box_section.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';

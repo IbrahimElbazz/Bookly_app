@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
             ThemeData.dark().textTheme),
       ),
 
-      // home: splash_page(),
+
     );
   }
 }
