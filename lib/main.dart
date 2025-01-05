@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -22,8 +22,6 @@ class MyApp extends StatelessWidget {
         textTheme: GoogleFonts.montserratAlternatesTextTheme(
             ThemeData.dark().textTheme),
       ),
-
-
     );
   }
 }

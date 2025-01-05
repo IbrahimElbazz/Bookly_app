@@ -21,7 +21,7 @@ class custem_app_bar extends StatelessWidget {
           const Spacer(),
           IconButton(
             onPressed: () {
-              GoRouter.of(context).push(app_router.searech_veiw_);
+              GoRouter.of(context).push(app_router.searchVeiw);
             },
             padding: EdgeInsets.zero,
             icon: const Icon(

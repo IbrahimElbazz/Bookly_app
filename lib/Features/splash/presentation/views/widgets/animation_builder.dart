@@ -15,7 +15,7 @@ class Animation_builder_widget extends StatelessWidget {
       builder: (context, _) {
         return SlideTransition(
           position: slidanimation,
-          child: Text(
+          child: const Text(
             'Read free book',
             textAlign: TextAlign.center,
             style: TextStyle(fontSize: 16, color: Colors.white),

@@ -1,8 +1,8 @@
 import 'package:bookly_app/Features/home/presentation/views/widget/home_body_view.dart';
 import 'package:flutter/material.dart';
 
-class Home_view extends StatelessWidget {
-  const Home_view({super.key});
+class homePage extends StatelessWidget {
+  const homePage({super.key});
 
   @override
   Widget build(BuildContext context) {

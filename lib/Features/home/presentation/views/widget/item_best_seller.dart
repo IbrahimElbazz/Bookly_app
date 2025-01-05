@@ -17,7 +17,7 @@ class item_best_seller extends StatelessWidget {
       padding: const EdgeInsets.only(bottom: 20),
       child: GestureDetector(
         onTap: () {
-          GoRouter.of(context).push(app_router.Home_detailes_view_);
+          GoRouter.of(context).push(app_router.homeDetailsView);
         },
         child: Container(
           height: 100,

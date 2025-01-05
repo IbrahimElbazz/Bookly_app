@@ -22,14 +22,8 @@ class _splash_bodyState extends State<splash_body>
     super.initState();
     init_animation();
 
-    Future.delayed(Duration(seconds: 3), () {
-      // Get.to(
-      //   () => Home_view(),
-      //   transition: Transition.rightToLeft,
-      //   duration: Kprimaryduration,
-      // );
-
-      GoRouter.of(context).push(app_router.KHome_view);
+    Future.delayed(const Duration(seconds: 2), () {
+      GoRouter.of(context).push(app_router.homeView);
     });
   }
 
@@ -47,7 +41,7 @@ class _splash_bodyState extends State<splash_body>
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Image.asset(imageData.logo),
-          SizedBox(
+          const SizedBox(
             height: 5,
           ),
           Animation_builder_widget(
@@ -61,9 +55,9 @@ class _splash_bodyState extends State<splash_body>
   void init_animation() {
     animationController = AnimationController(
       vsync: this,
-      duration: (Duration(seconds: 2)),
+      duration: (const Duration(seconds: 2)),
     );
-    slidanimation = Tween(begin: Offset(0, 5), end: Offset.zero)
+    slidanimation = Tween(begin: const Offset(0, 5), end: Offset.zero)
         .animate(animationController);
 
     animationController.forward();
