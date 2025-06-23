@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class custem_textfeild extends StatelessWidget {
-  const custem_textfeild({super.key});
+class CustomTextField extends StatelessWidget {
+  const CustomTextField({super.key});
 
   @override
   Widget build(BuildContext context) {

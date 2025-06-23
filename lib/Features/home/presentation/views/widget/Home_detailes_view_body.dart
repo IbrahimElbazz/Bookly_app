@@ -7,8 +7,8 @@ import 'package:bookly_app/Features/home/presentation/views/widget/similar_box_s
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-class Book_detailes_view_body extends StatelessWidget {
-  const Book_detailes_view_body({super.key});
+class BookingDetailsViewBody extends StatelessWidget {
+  const BookingDetailsViewBody({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,15 +20,15 @@ class Book_detailes_view_body extends StatelessWidget {
             child: Column(
               children: [
                 SafeArea(
-                  child: Book_detailes_custem_appBar(),
+                  child: BookingDetailsCustomAppBar(),
                 ),
-                box_details_section(),
+                BoxDetailsSection(),
                 Expanded(
                   child: SizedBox(
                     height: 50,
                   ),
                 ),
-                similar_box_section(),
+                SimilarBoxSection(),
               ],
             ),
           )

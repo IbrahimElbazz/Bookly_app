@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-class custem_buttom extends StatelessWidget {
-  const custem_buttom({
+class CustomButton extends StatelessWidget {
+  const CustomButton({
     super.key,
-    this.ontap,
+    this.onTap,
     required this.title,
     this.topleft,
     this.bottomLeft,
@@ -12,7 +12,7 @@ class custem_buttom extends StatelessWidget {
     this.color,
     this.textStyle,
   });
-  final void Function()? ontap;
+  final void Function()? onTap;
   final String title;
   final Radius? topleft, bottomLeft, bottomRight, topRight;
   final Color? color;
@@ -36,7 +36,7 @@ class custem_buttom extends StatelessWidget {
             backgroundColor: WidgetStatePropertyAll(
               color,
             )),
-        onPressed: ontap,
+        onPressed: onTap,
         child: Text(
           title,
           style: textStyle,

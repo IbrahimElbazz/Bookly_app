@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Book_rating extends StatelessWidget {
-  const Book_rating({super.key});
+class BookRating extends StatelessWidget {
+  const BookRating({super.key});
 
   @override
   Widget build(BuildContext context) {

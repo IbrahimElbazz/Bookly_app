@@ -4,8 +4,8 @@ import 'package:bookly_app/Features/home/presentation/views/widget/custem_item.d
 import 'package:bookly_app/core/utils/style.dart';
 import 'package:flutter/material.dart';
 
-class box_details_section extends StatelessWidget {
-  const box_details_section({super.key});
+class BoxDetailsSection extends StatelessWidget {
+  const BoxDetailsSection({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +16,7 @@ class box_details_section extends StatelessWidget {
         ),
         SizedBox(
           height: MediaQuery.of(context).size.height * 0.28,
-          child: const custem_item(),
+          child: const CustomItem(),
         ),
         const SizedBox(
           height: 30,
@@ -35,11 +35,11 @@ class box_details_section extends StatelessWidget {
         const SizedBox(
           height: 10,
         ),
-        const Book_rating(),
+        const BookRating(),
         const SizedBox(
           height: 32,
         ),
-        const action_button(),
+        const ActionButton(),
       ],
     );
   }

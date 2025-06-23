@@ -1,8 +1,8 @@
 import 'package:bookly_app/Features/home/presentation/views/widget/custem_item.dart';
 import 'package:flutter/material.dart';
 
-class list_view_item extends StatelessWidget {
-  const list_view_item({super.key});
+class ListViewItem extends StatelessWidget {
+  const ListViewItem({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +14,7 @@ class list_view_item extends StatelessWidget {
         itemBuilder: (context, index) {
           return const Padding(
             padding: EdgeInsets.symmetric(horizontal: 8),
-            child: custem_item(),
+            child: CustomItem(),
           );
         },
       ),

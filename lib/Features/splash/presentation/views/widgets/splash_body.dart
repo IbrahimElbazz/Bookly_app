@@ -5,25 +5,25 @@ import 'package:flutter/material.dart';
 import 'package:bookly_app/core/utils/images.dart';
 import 'package:go_router/go_router.dart';
 
-class splash_body extends StatefulWidget {
-  const splash_body({super.key});
+class SplashBody extends StatefulWidget {
+  const SplashBody({super.key});
 
   @override
-  State<splash_body> createState() => _splash_bodyState();
+  State<SplashBody> createState() => _SplashBodyState();
 }
 
-class _splash_bodyState extends State<splash_body>
+class _SplashBodyState extends State<SplashBody>
     with SingleTickerProviderStateMixin {
   late AnimationController animationController;
-  late Animation<Offset> slidanimation;
+  late Animation<Offset> slidAnimation;
 
   @override
   void initState() {
     super.initState();
-    init_animation();
+    initAnimation();
 
     Future.delayed(const Duration(seconds: 2), () {
-      GoRouter.of(context).push(app_router.homeView);
+      GoRouter.of(context).push(AppRouter.homeView);
     });
   }
 
@@ -40,24 +40,24 @@ class _splash_bodyState extends State<splash_body>
         crossAxisAlignment: CrossAxisAlignment.stretch,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Image.asset(imageData.logo),
+          Image.asset(ImageData.logo),
           const SizedBox(
             height: 5,
           ),
           Animation_builder_widget(
-            slidanimation: slidanimation,
+            slidAnimation: slidAnimation,
           ),
         ],
       ),
     );
   }
 
-  void init_animation() {
+  void initAnimation() {
     animationController = AnimationController(
       vsync: this,
       duration: (const Duration(seconds: 2)),
     );
-    slidanimation = Tween(begin: const Offset(0, 5), end: Offset.zero)
+    slidAnimation = Tween(begin: const Offset(0, 5), end: Offset.zero)
         .animate(animationController);
 
     animationController.forward();

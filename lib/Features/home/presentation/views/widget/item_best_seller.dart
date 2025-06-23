@@ -6,8 +6,8 @@ import 'package:bookly_app/core/utils/style.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-class item_best_seller extends StatelessWidget {
-  const item_best_seller({
+class ItemBestSeller extends StatelessWidget {
+  const ItemBestSeller({
     super.key,
   });
 
@@ -17,9 +17,9 @@ class item_best_seller extends StatelessWidget {
       padding: const EdgeInsets.only(bottom: 20),
       child: GestureDetector(
         onTap: () {
-          GoRouter.of(context).push(app_router.homeDetailsView);
+          GoRouter.of(context).push(AppRouter.homeDetailsView);
         },
-        child: Container(
+        child: SizedBox(
           height: 100,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -31,7 +31,7 @@ class item_best_seller extends StatelessWidget {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
                       image: const DecorationImage(
-                          image: AssetImage(imageData.test), fit: BoxFit.fill),
+                          image: AssetImage(ImageData.test), fit: BoxFit.fill),
                     ),
                   ),
                 ),
@@ -61,7 +61,7 @@ class item_best_seller extends StatelessWidget {
                       SizedBox(
                         width: 80,
                       ),
-                      Book_rating(),
+                      BookRating(),
                     ],
                   )
                 ],

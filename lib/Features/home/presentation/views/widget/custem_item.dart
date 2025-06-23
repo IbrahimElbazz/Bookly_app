@@ -1,8 +1,8 @@
 import 'package:bookly_app/core/utils/images.dart';
 import 'package:flutter/material.dart';
 
-class custem_item extends StatelessWidget {
-  const custem_item({super.key});
+class CustomItem extends StatelessWidget {
+  const CustomItem({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +12,7 @@ class custem_item extends StatelessWidget {
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
           image: const DecorationImage(
-              image: AssetImage(imageData.test), fit: BoxFit.fill),
+              image: AssetImage(ImageData.test), fit: BoxFit.fill),
         ),
       ),
     );

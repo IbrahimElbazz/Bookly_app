@@ -4,8 +4,8 @@ import 'package:bookly_app/Features/home/presentation/views/widget/list_view_ite
 import 'package:bookly_app/core/utils/style.dart';
 import 'package:flutter/material.dart';
 
-class home_body_view extends StatelessWidget {
-  const home_body_view({super.key});
+class HomeBodyView extends StatelessWidget {
+  const HomeBodyView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -19,8 +19,8 @@ class home_body_view extends StatelessWidget {
                 SizedBox(
                   height: 40,
                 ),
-                custem_app_bar(),
-                list_view_item(),
+                CustomAppBar(),
+                ListViewItem(),
                 SizedBox(
                   height: 40,
                 ),
@@ -40,7 +40,7 @@ class home_body_view extends StatelessWidget {
           SliverToBoxAdapter(
             child: Padding(
               padding: EdgeInsets.symmetric(horizontal: 30),
-              child: List_item_view_bestseller(),
+              child: ListViewBestSeller(),
             ),
           )
         ],

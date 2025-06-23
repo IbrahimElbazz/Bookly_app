@@ -6,31 +6,31 @@ import 'package:go_router/go_router.dart';
 
 import '../../Features/home/presentation/views/home_detailes.dart';
 
-abstract class app_router {
+abstract class AppRouter {
   static const homeView = '/Home';
-  static const homeDetailsView = '/Home_detailes_view';
-  static const searchVeiw = '/searech_veiw';
+  static const homeDetailsView = '/homeDetailsView';
+  static const searchView = '/searchView';
 
   static final router = GoRouter(
     routes: [
       GoRoute(
         path: '/',
-        builder: (context, state) => const splashPage(),
+        builder: (context, state) => const SplashPage(),
       ),
       GoRoute(
-        path: searchVeiw,
-        builder: (context, state) => const searchPage(),
+        path: searchView,
+        builder: (context, state) => const SearchPage(),
       ),
       GoRoute(
         path: homeView,
-        builder: (context, state) => const homePage(),
+        builder: (context, state) => const HomePage(),
       ),
       GoRoute(
         path: homeDetailsView,
         pageBuilder: (context, state) {
           return CustomTransitionPage(
             key: state.pageKey,
-            child: const bookDetailsPage(),
+            child: const BookDetailsPage(),
             transitionsBuilder:
                 (context, animation, secondaryAnimation, child) {
               return FadeTransition(

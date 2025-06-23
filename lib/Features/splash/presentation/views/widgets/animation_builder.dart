@@ -3,18 +3,18 @@ import 'package:flutter/material.dart';
 class Animation_builder_widget extends StatelessWidget {
   const Animation_builder_widget({
     super.key,
-    required this.slidanimation,
+    required this.slidAnimation,
   });
 
-  final Animation<Offset> slidanimation;
+  final Animation<Offset> slidAnimation;
 
   @override
   Widget build(BuildContext context) {
     return AnimatedBuilder(
-      animation: slidanimation,
+      animation: slidAnimation,
       builder: (context, _) {
         return SlideTransition(
-          position: slidanimation,
+          position: slidAnimation,
           child: const Text(
             'Read free book',
             textAlign: TextAlign.center,

@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:go_router/go_router.dart';
 
-class custem_app_bar extends StatelessWidget {
-  const custem_app_bar({super.key});
+class CustomAppBar extends StatelessWidget {
+  const CustomAppBar({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,14 +14,14 @@ class custem_app_bar extends StatelessWidget {
       child: Row(
         children: [
           Image.asset(
-            imageData.logo,
+            ImageData.logo,
             width: 80,
             height: 60,
           ),
           const Spacer(),
           IconButton(
             onPressed: () {
-              GoRouter.of(context).push(app_router.searchVeiw);
+              GoRouter.of(context).push(AppRouter.searchView);
             },
             padding: EdgeInsets.zero,
             icon: const Icon(
